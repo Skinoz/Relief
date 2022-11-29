@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'natural';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/public/fonts/Natural.ttf');
+}
+
+@font-face {
+    font-family: 'rambutan';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/public/fonts/Rambutan.ttf');
+}
+
+.natural{
+    font-family: natural;
+}
+
+.rambutan{
+    font-family: rambutan;
+}
+
+.Nexsit-grey{
+    color: #60685C;
+}
+
+.nav-text{
+    font-size: 1.5rem;
+}
+
+.index-arg{
+    font-size:  3.5rem;
+}
+
+.Nexsit-grey-svg{
+    filter: invert(38%) sepia(2%) saturate(2175%) hue-rotate(50deg) brightness(101%) contrast(88%);
+}
+
+.hr-nav{
+    color:#60685C; background-color:#60685C; height:1px; border:0;
+}

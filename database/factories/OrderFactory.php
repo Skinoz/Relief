@@ -16,8 +16,13 @@ class OrderFactory extends Factory
      */
     public function definition()
     {
+        // $table->string('order_number');
+        // $table->dateTime('shipped_at');
+        // $table->enum('status', ['pending', 'success', 'cancelled']);
+
         return [
             'order_number' => uniqid()
         ];
     }
+
 }

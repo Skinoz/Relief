@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,15 +16,11 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
-Route::get('cuisine', function () { return view('kitchen');})->name('kitchen');
-Route::get('salledebain', function () { return view('bathroom');})->name('bathroom');
-Route::get('salon', function () { return view('livingroom');})->name('livingroom');
-Route::get('chambre', function () { return view('bedroom');})->name('bedroom');
-
-Route::get('products',  [ProductController::class, 'index'])->name('products.index');
+Route::get('products', [ProductController::class, 'index'])
+    ->name('products.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

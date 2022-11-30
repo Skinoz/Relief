@@ -1,15 +1,15 @@
 import './bootstrap';
 
 import Alpine from 'alpinejs';
-import { createApp } from "vue/dist/vue.esm-bundler";
-import AddToCart from './components/AddToCart.vue';
+import { createApp } from 'vue';
+import AddToCart from './components/AddToCart.vue'
 
 window.Alpine = Alpine;
 
 Alpine.start();
 
-const app = createApp();
+/* const app = createApp();
 
-app.component('AddToCart', AddToCart)
+app.component('AddToCart', AddToCart);
 
-app.mount('#app');
+app.mount('#app'); */
